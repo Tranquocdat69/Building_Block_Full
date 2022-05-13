@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>FPTS.FIT.BDRD.BuildingBlocks.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <Authors>FIT-BDRD</Authors>
+    <PackageTags>EventBus</PackageTags>
+    <Version>1.0.0</Version>
+    <PackageId>FPTS.$(AssemblyName)</PackageId>
+    <Company>FPTS</Company>
+    <Copyright>FPTS</Copyright>
+    <Description>Abstractions EventBus 
+created by: NgocTH</Description>
+    <PackageIcon>fpts.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\fpts.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+</Project>

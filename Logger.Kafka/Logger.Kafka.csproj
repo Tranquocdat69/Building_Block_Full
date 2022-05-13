@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>FPTS.FIT.BDRD.BuildingBlocks.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <Version>1.0.1</Version>
+    <PackageId>FPTS.$(AssemblyName)</PackageId>
+    <Authors>FIT-BDRD</Authors>
+    <Company>FPTS</Company>
+    <Description>Logger implement qua Kafka 
+created by: AnhTV</Description>
+    <Copyright>FPTS</Copyright>
+    <PackageIcon>fpts.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\fpts.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Confluent.Kafka" Version="1.8.2" />
+    <PackageReference Include="Microsoft.Extensions.Logging" Version="6.0.0" />
+  </ItemGroup>
+
+</Project>

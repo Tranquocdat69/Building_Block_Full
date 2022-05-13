@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RootNamespace>FPTS.FIT.BDRD.BuildingBlocks.$(MSBuildProjectName.Replace(" ", "_"))</RootNamespace>
+    <PackageId>FPTS.$(AssemblyName)</PackageId>
+    <Authors>FIT-BDRD</Authors>
+    <Company>FPTS</Company>
+    <Copyright>FPTS</Copyright>
+    <Version>1.0.0</Version>
+    <Description>code share giữa các bounded context 
+created by: NgocTH</Description>
+    <PackageIcon>fpts.png</PackageIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Include="..\fpts.png">
+      <Pack>True</Pack>
+      <PackagePath>\</PackagePath>
+    </None>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Disruptor" Version="4.0.0" />
+    <PackageReference Include="MediatR" Version="10.0.1" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
+  </ItemGroup>
+
+</Project>
